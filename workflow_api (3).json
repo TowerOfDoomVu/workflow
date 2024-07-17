@@ -1,7 +1,7 @@
 {
   "3": {
     "inputs": {
-      "seed": 406388488232953,
+      "seed": 532721956867994,
       "steps": 15,
       "cfg": 1.09,
       "sampler_name": "lcm",
@@ -85,7 +85,7 @@
   },
   "12": {
     "inputs": {
-      "lora_name": "lcm/SDXL/pytorch_lora_weights.safetensors",
+      "lora_name": "LCM/SDXL/LCM_LoRA_Weights_SD15.safetensors",
       "strength_model": 1,
       "strength_clip": 1,
       "model": [
@@ -114,7 +114,7 @@
   },
   "18": {
     "inputs": {
-      "seed": 118079449292609,
+      "seed": 1090048765495335,
       "custom": " ",
       "subject": "cinematic",
       "artform": "photography",
@@ -138,15 +138,6 @@
     "class_type": "PromptGenerator",
     "_meta": {
       "title": "SDXL Auto Prompter"
-    }
-  },
-  "24": {
-    "inputs": {
-      "text": "(Arri Alexa LF with ARRI Signature Prime 21mm T1.8 Lens:1) (ground level:1.55)"
-    },
-    "class_type": "ttN text",
-    "_meta": {
-      "title": "text"
     }
   },
   "27": {
@@ -199,60 +190,17 @@
         0
       ],
       "text2": [
-        "51",
-        0
-      ],
-      "operation": "text1 + text2 to output1, text1 to output2",
-      "delimiter": " ",
-      "use_seed": "false",
-      "seed": 1023232647574612
-    },
-    "class_type": "TextCombinations",
-    "_meta": {
-      "title": "Text Combinations 2 (Mikey)"
-    }
-  },
-  "51": {
-    "inputs": {
-      "text1": [
         "54",
         0
       ],
-      "text2": [
-        "53",
-        0
-      ],
       "operation": "text1 + text2 to output1, text1 to output2",
       "delimiter": " ",
       "use_seed": "false",
-      "seed": 362177134786897
+      "seed": 705476827048148
     },
     "class_type": "TextCombinations",
     "_meta": {
       "title": "Text Combinations 2 (Mikey)"
-    }
-  },
-  "52": {
-    "inputs": {
-      "name": "text2",
-      "tweak": false,
-      "STRING": [
-        "24",
-        0
-      ]
-    },
-    "class_type": "mape Variable",
-    "_meta": {
-      "title": "mape Variable"
-    }
-  },
-  "53": {
-    "inputs": {
-      "name": "text2"
-    },
-    "class_type": "mape Variable",
-    "_meta": {
-      "title": "mape Variable"
     }
   },
   "54": {
@@ -261,7 +209,7 @@
     },
     "class_type": "ttN text",
     "_meta": {
-      "title": "text"
+      "title": "prompt"
     }
   },
   "60": {

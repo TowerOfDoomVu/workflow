@@ -1,0 +1,279 @@
+{
+  "3": {
+    "inputs": {
+      "seed": 406388488232952,
+      "steps": 15,
+      "cfg": 1.09,
+      "sampler_name": "lcm",
+      "scheduler": "normal",
+      "denoise": 1,
+      "model": [
+        "27",
+        0
+      ],
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "latent_image": [
+        "45",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "4": {
+    "inputs": {
+      "ckpt_name": "turbovisionxlSuperFastXLBasedOnNew_tvxlV32Bakedvae.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "6": {
+    "inputs": {
+      "text": [
+        "46",
+        0
+      ],
+      "clip": [
+        "12",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "text": "(over exposed)long neck",
+      "clip": [
+        "12",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "8": {
+    "inputs": {
+      "samples": [
+        "3",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "12": {
+    "inputs": {
+      "lora_name": "lcm/SDXL/pytorch_lora_weights.safetensors",
+      "strength_model": 1,
+      "strength_clip": 1,
+      "model": [
+        "4",
+        0
+      ],
+      "clip": [
+        "4",
+        1
+      ]
+    },
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "16": {
+    "inputs": {
+      "resolution": "1728 x 576 (3.00)",
+      "batch_size": 4
+    },
+    "class_type": "SDXL Empty Latent Image",
+    "_meta": {
+      "title": "SDXL Empty Latent Image"
+    }
+  },
+  "18": {
+    "inputs": {
+      "seed": 118079449292609,
+      "custom": " ",
+      "subject": "cinematic",
+      "artform": "photography",
+      "photo_type": "wide angle view",
+      "default_tags": "disabled",
+      "roles": "disabled",
+      "hairstyles": "disabled",
+      "additional_details": "disabled",
+      "photography_styles": "landscape photography",
+      "device": "disabled",
+      "photographer": "disabled",
+      "artist": "disabled",
+      "digital_artform": "disabled",
+      "place": "disabled",
+      "lighting": "random",
+      "clothing": "disabled",
+      "composition": "disabled",
+      "pose": "disabled",
+      "background": "disabled"
+    },
+    "class_type": "PromptGenerator",
+    "_meta": {
+      "title": "SDXL Auto Prompter"
+    }
+  },
+  "24": {
+    "inputs": {
+      "text": "(Arri Alexa LF with ARRI Signature Prime 21mm T1.8 Lens:1) (ground level:1.55)"
+    },
+    "class_type": "ttN text",
+    "_meta": {
+      "title": "text"
+    }
+  },
+  "27": {
+    "inputs": {
+      "b1": 1,
+      "b2": 1,
+      "s1": 1,
+      "s2": 0.5,
+      "model": [
+        "12",
+        0
+      ]
+    },
+    "class_type": "FreeU_V2",
+    "_meta": {
+      "title": "FreeU_V2"
+    }
+  },
+  "29": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "45": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "scale_by": 1,
+      "samples": [
+        "16",
+        0
+      ]
+    },
+    "class_type": "LatentUpscaleBy",
+    "_meta": {
+      "title": "Upscale Latent By"
+    }
+  },
+  "46": {
+    "inputs": {
+      "text1": [
+        "18",
+        0
+      ],
+      "text2": [
+        "51",
+        0
+      ],
+      "operation": "text1 + text2 to output1, text1 to output2",
+      "delimiter": " ",
+      "use_seed": "false",
+      "seed": 60387239051269
+    },
+    "class_type": "TextCombinations",
+    "_meta": {
+      "title": "Text Combinations 2 (Mikey)"
+    }
+  },
+  "51": {
+    "inputs": {
+      "text1": [
+        "54",
+        0
+      ],
+      "text2": [
+        "53",
+        0
+      ],
+      "operation": "text1 + text2 to output1, text1 to output2",
+      "delimiter": " ",
+      "use_seed": "false",
+      "seed": 482666290181952
+    },
+    "class_type": "TextCombinations",
+    "_meta": {
+      "title": "Text Combinations 2 (Mikey)"
+    }
+  },
+  "52": {
+    "inputs": {
+      "name": "text2",
+      "tweak": false,
+      "STRING": [
+        "24",
+        0
+      ]
+    },
+    "class_type": "mape Variable",
+    "_meta": {
+      "title": "mape Variable"
+    }
+  },
+  "53": {
+    "inputs": {
+      "name": "text2"
+    },
+    "class_type": "mape Variable",
+    "_meta": {
+      "title": "mape Variable"
+    }
+  },
+  "54": {
+    "inputs": {
+      "text": "victorian bathroom\n"
+    },
+    "class_type": "ttN text",
+    "_meta": {
+      "title": "text"
+    }
+  },
+  "60": {
+    "inputs": {
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  }
+}

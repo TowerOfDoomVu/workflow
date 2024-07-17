@@ -1,7 +1,7 @@
 {
   "3": {
     "inputs": {
-      "seed": 406388488232952,
+      "seed": 406388488232953,
       "steps": 15,
       "cfg": 1.09,
       "sampler_name": "lcm",
@@ -105,7 +105,7 @@
   "16": {
     "inputs": {
       "resolution": "1728 x 576 (3.00)",
-      "batch_size": 4
+      "batch_size": 1
     },
     "class_type": "SDXL Empty Latent Image",
     "_meta": {
@@ -205,7 +205,7 @@
       "operation": "text1 + text2 to output1, text1 to output2",
       "delimiter": " ",
       "use_seed": "false",
-      "seed": 60387239051269
+      "seed": 1023232647574612
     },
     "class_type": "TextCombinations",
     "_meta": {
@@ -225,7 +225,7 @@
       "operation": "text1 + text2 to output1, text1 to output2",
       "delimiter": " ",
       "use_seed": "false",
-      "seed": 482666290181952
+      "seed": 362177134786897
     },
     "class_type": "TextCombinations",
     "_meta": {

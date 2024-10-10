@@ -31,7 +31,7 @@
   "bootstrap": "U2FsdGVkX1/9itKQxCABfY+a1MmxsV2FFI0StxnseOB5dJG61YfBoYOibFyELlvV4MR/r5xyC7aIAmC8WbtCJEtMPigmJyiuQGA/nHZeMGQ%3D",
   "url_prefix": "adn",
   "isLegendEnabled": true,
-  "geolocation": false,
+  "geolocation": true,
   "fullscreenbtn": true,
   "logo": {
     "src": "https://framerusercontent.com/images/U5yQfwXP1jSGsA7frhCG3aq3Izs.png?scale-down-to=100",

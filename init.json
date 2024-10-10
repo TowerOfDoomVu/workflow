@@ -1,0 +1,46 @@
+{
+  "products": [
+    "Klystron 9:BA9-0x0776-1/Standard-Mercator:30:1",
+    "National Radar:north-american-radar/Mask1-Mercator:45:2",
+    "Storm Direction:scits",
+    "Lightning:lightning",
+    "Watches and Warnings:nws-bulletins",
+    "12hr Rainfall Totals:precip-liquidaccum-12hr/Standard-Mercator:120:4",
+    "24hr Rainfall Totals:precip-liquidaccum-24hr/Standard-Mercator:120:4",
+    "Future Radar:baron-hires-preciprate-inph-surface/Mask1-Mercator:2880:60:F",
+    "Sensors:metar-sensors",
+    "Atlantic Satellite:C39-0x0318-0/Standard-Mercator:240:15",
+    "Tropical Track:tropical-history",
+    "Tropical Forecast Models:spaghetti",
+    "Recon Flight:hurricane-hunters"
+  ],
+  "product_default": "Klystron 9:BA9-0x0776-1/Standard-Mercator:30:1",
+  "legends": {
+    "National Radar": "https://s3.amazonaws.com/static.baron.web.apps/digitial_wx/widgets/dcms/products/7d441a33-295e-4e42-805d-67e1d141fa33/legend.png",
+    "Storm Direction": "https://s3.amazonaws.com/static.baron.web.apps/digitial_wx/widgets/dcms/products/49be6d71-f803-4bbc-9081-5f9005cffdbd/legend.png",
+    "24hr Rainfall Totals": "https://s3.amazonaws.com/static.baron.web.apps/digitial_wx/widgets/dcms/products/aa5f2e6b-af0f-4dcc-adb2-bc5343f00c8a/legend.png",
+    "Future Radar": "https://s3.amazonaws.com/static.baron.web.apps/digitial_wx/widgets/dcms/products/c935424b-cb71-48be-9c89-e0de108f1a5c/legend.png",
+    "Atlantic Satellite": "https://s3.amazonaws.com/static.baron.web.apps/digitial_wx/widgets/dcms/products/ef2c5edf-1c30-47bb-bc09-484bcb8ab9f5/legend.png"
+  },
+  "lat": 27.9701,
+  "lon": -82.4579,
+  "city": "Tampa, FL",
+  "zoom": 8,
+  "color": "21448B",
+  "searchCookiePrefix": "bn9",
+  "bootstrap": "U2FsdGVkX1/9itKQxCABfY+a1MmxsV2FFI0StxnseOB5dJG61YfBoYOibFyELlvV4MR/r5xyC7aIAmC8WbtCJEtMPigmJyiuQGA/nHZeMGQ%3D",
+  "url_prefix": "adn",
+  "isLegendEnabled": true,
+  "geolocation": false,
+  "fullscreenbtn": true,
+  "logo": {
+    "src": "https://framerusercontent.com/images/U5yQfwXP1jSGsA7frhCG3aq3Izs.png?scale-down-to=512",
+    "opacity": 1,
+    "positionbottom": "0px",
+    "positionright": "0px",
+    "width": "100px",
+    "height": "50px"
+  },
+  "mapType": "merged_baronweather",
+  "changeableMapType": 1
+}
